@@ -1,0 +1,52 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "question": "How do you think your community has done in terms of transportation infrastructure on a scale of 1 to 5 (1 being bad, 5 being great)?",
+      "level1": "Insufficent roads and public transportation to meet needs.",
+      "level2": "Decent roads, however not alot of options for public transportation, walkable communities.",
+      "level3": "Great roads, decent public transportation, lack of bike lanes.",
+      "level4": "Excellent roads and highways, great public transportation but relies on fossil fuel, has some bike lanes and walkable.",
+      "level5": "Excellent roads and highways, public transportation has a variety of options and runs majority on renewable energy, has a variety of bike lanes and walkable community."
+    },
+    {
+      "id": "2",
+      "question": "How do you think your community does in terms of housing affordability and safe housing as well as access to basic institutions (schools, community centers, etc)?",
+      "level1": "Unsafe housing, not affordable, housing takes up a lot of space and lack of insitutions and accessibility to such.",
+      "level2": "Safe housing, not affordable, housing takes up significant space and some insitutions and hard to get access to such.",
+      "level3": "Safe housing, moderately affordable, housing takes up some space and some insitutions and moderately hard to get access to such.",
+      "level4": "Safe housing, affordable, housing takes up not alot space and a variety insitutions and moderately easy to get access to such.",
+      "level5": "Safe housing, affordable, housing takes up not alot space and a lot insitutions and easy to get access to such."
+    },
+    {
+      "id": "3",
+      "question": "How does your community conserve energy, use clean energy and decrease pollution on a scale of 1 to 5?",
+      "level1": "Does not conserve energy and use clean energy, likes using fossil fuels and constantly contributes to pollution.",
+      "level2": "Conserves minimal energy, does not use clean energy, uses a decent amount of fossil fuels and contributes a significant amount to pollution.",
+      "level3": "Conserves a moderate amount of energy, uses minimal clean energy and contributes a moderate amount to pollution.",
+      "level4": "Conserves a significant amount of energy, uses a moderate amount of clean energy, and contributes limited amounts to pollution.",
+      "level5": "Conserves a significant amount of energy, uses a significant amount of clean energy, and contributes limited to amounts of pollution."
+    },
+    {
+      "id": "4",
+      "question": "How supportive and involved is your commuity in the urban development process?",
+      "level1": "Community is not involved, in the process, and not supportive. No organizations that support social and environmental aspects.",
+      "level2": "Community is lacking involvement, in the process, and supportive. Lack of organizations that support social and environmental aspects.",
+      "level3": "Community is moderately involved, in the process, and supportive. Has some organizations that support social and environmental aspects.",
+      "level4": "Community is signifcantly involved, and supprotive. Has some organizations that support social and environmental aspects.",
+      "level5": "Community is signifcantly involved, and supprotive. Has significant organizations that support social and environmental aspects."
+    }
+  ],
+  "mcq": [
+    {
+      "id": "8933",
+      "val": "3",
+      "level": "Level 1"
+    },
+    {
+      "id": "d83e",
+      "val": "3",
+      "level": "Level 1"
+    }
+  ]
+}
