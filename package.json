@@ -8,8 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "server1": "json-server --watch src/questions.json --port 8000",
-    "server2": "json-server --watch src/responses.json --port 9000"
+    "server1": "json-server --watch src/questions.json --port 8000"
   },
   "dependencies": {
     "aos": "^3.0.0-beta.6",

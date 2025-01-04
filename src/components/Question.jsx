@@ -34,7 +34,7 @@ const Question = ({question, path, val}) => {
         <div className="flex items-center h-[100vh] w-[100vw] gap-4">
             <div className="flex flex-col items-center ml-[20vw] w-[40vw]">
                 <div className="text-center text-[30px] text-white font-poppins">{question.question}</div>
-                <select name="levels" className="mt-6 w-[300px] text-center h-[50px] font-poppins text-black" value={level} onChange={(e) => setLevel(e.target.value)}>
+                <select name="levels" className="mt-6 w-[300px] text-center h-[50px] font-poppins text-black z-50" value={level} onChange={(e) => setLevel(e.target.value)}>
                     <option value="level1"> Level 1 </option>
                     <option value="level2"> Level 2 </option>
                     <option value="level3"> Level 3 </option>

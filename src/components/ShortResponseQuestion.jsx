@@ -3,8 +3,8 @@ import Button from './Button'
 import {useState} from 'react'
 
 const Question = ({}) => {
-  const [additionalInfo, setAdditionalInfo] = useState('');
-  const val = 5;
+  const [level, setLevel] = useState('');
+  const val = "5";
 
   const addLevel = async (newLevel) => {
     const res = await fetch('/api/mcq',  {
@@ -21,7 +21,7 @@ const Question = ({}) => {
     e.preventDefault();
     const newLevel = {
         val,
-        additionalInfo
+        level
     };
     addLevel(newLevel)
     console.log(newLevel)
@@ -41,8 +41,8 @@ const Question = ({}) => {
                 className="border rounded w-[30vw] mt-[20px] py-2 px-3"
                 rows="4"
                 placeholder="Add your additional information here."
-                value={additionalInfo}
-                onChange={(e) => setAdditionalInfo(e.target.value)}
+                value={level}
+                onChange={(e) => setLevel(e.target.value)}
               ></textarea>
 
                 </form> 

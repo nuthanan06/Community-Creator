@@ -19,7 +19,7 @@ const HousingPage = () => {
 
     return (
         <>
-            <Question question={question} path="/energy" val="3"/>
+            <Question question={question} path="/energy" val="2"/>
             <div className='z-0 bg-gray-400 w-[100vw] h-[5%] absolute top-[95%]'></div>
             {leftPixels.map((x, index) => (
                 <YellowLine key={index} left={x} />
