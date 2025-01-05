@@ -2,8 +2,8 @@
 
 Developed an interactive platform that provides users with AI-powered feedback to improve their community's sustainable practices. Users answer multiple choice questions and receive actionable suggestions to help create a more sustainable environment. Recieved YRHacks 2022 Sustainable Communities award for the project. 
 
-**Front-end**: React (Vite), Tailwind CSS
-**Back-end**: Flask (using Cohere API)
+**Front-end**: React (Vite), Tailwind CSS  
+**Back-end**: Flask (using Cohere API)  
 **Data Storage**: JSON 
 
 
