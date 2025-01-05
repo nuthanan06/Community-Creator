@@ -7,7 +7,7 @@ import HousingPage from './pages/HousingPage';
 import EnergyPage from './pages/EnergyPage';
 import CommunityPage from './pages/CommunityPage';
 import AdditionalQuestions from './pages/AdditionalQuestions';
-
+import FinalPage from './pages/FinalPage';
 
 function App() {
 
@@ -19,7 +19,8 @@ function App() {
       <Route path='/housing' element={<HousingPage />} loader={createLoaderWithIndex(2)}/> 
       <Route path='/energy' element={<EnergyPage />} loader={createLoaderWithIndex(3)}/> 
       <Route path='/community' element={<CommunityPage />} loader={createLoaderWithIndex(4)}/> 
-      <Route path='/additional' element={<AdditionalQuestions />} /> 
+      <Route path='/additional' element={<AdditionalQuestions />} />
+      <Route path="/final" element={<FinalPage />} /> 
     </Route>
     )
   )

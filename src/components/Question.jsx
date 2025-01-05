@@ -2,7 +2,7 @@ import React from 'react'
 import Button from './Button'
 import {useState} from 'react'
 
-const Question = ({question, path, val}) => {
+const Question = ({question, path, val, height="100vh"}) => {
   const [level, setLevel] = useState('level1');
 
   const addLevel = async (newLevel) => {
@@ -31,7 +31,7 @@ const Question = ({question, path, val}) => {
   }
   return (
     <>
-        <div className="flex items-center h-[100vh] w-[100vw] gap-4">
+        <div className={`flex items-center h-[${height}] w-[100vw] gap-4`}>
             <div className="flex flex-col items-center ml-[20vw] w-[40vw]">
                 <div className="text-center text-[30px] text-white font-poppins">{question.question}</div>
                 <select name="levels" className="mt-6 w-[300px] text-center h-[50px] font-poppins text-black z-50" value={level} onChange={(e) => setLevel(e.target.value)}>
@@ -43,7 +43,7 @@ const Question = ({question, path, val}) => {
                 </select>
                 <Button path={path} message="Next" onClick={submitForm}/>
             </div>
-            <div className="w-[35vw] font-poppins text-white border-l-2 pl-4 ml-4 border-white">
+            <div className="w-[35vw] font-poppins text-white border-l-2 pl-4 ml-4 border-white z-50">
                 <p className='mb-[25px]'> <span className="font-bold"> Level 1: </span> {question.level1} </p>
                 <p className='mb-[25px]'> <span className="font-bold"> Level 2: </span> {question.level2} </p>
                 <p className='mb-[25px]'> <span className="font-bold"> Level 3: </span> {question.level3} </p>

@@ -46,7 +46,7 @@ const Question = ({}) => {
               ></textarea>
 
                 </form> 
-                <Button path='/energy' message="Next" onClick={submitForm}/>
+                <Button path='/final' message="Next" onClick={submitForm}/>
             </div>
         </div>
     </>
