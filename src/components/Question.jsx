@@ -3,7 +3,7 @@ import Button from './Button'
 import {useState} from 'react'
 
 const Question = ({question, path, val}) => {
-  const [level, setLevel] = useState('Level 1');
+  const [level, setLevel] = useState('level1');
 
   const addLevel = async (newLevel) => {
     const res = await fetch('/api/mcq',  {
