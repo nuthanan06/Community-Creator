@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 import YellowLine from '../components/YellowLine';
 import { useLoaderData } from 'react-router-dom';
 import Question from '../components/Question';
-import Bus from '../assets/Bus.png'
-import Buildings from '../assets/Buildings.png'
-import School from '../assets/School.png'
+import Bus from '../assets/Bus.png';
+import Buildings from '../assets/Buildings.png';
+import School from '../assets/School.png';
+import "./animation.css"; 
 
 const EnergyPage = () => {
     const [leftPixels, setLeftPixels] = useState([]);
@@ -27,8 +28,8 @@ const EnergyPage = () => {
                 <YellowLine key={index} left={x} />
             ))}
             <img className="absolute top-[70vh] left-[50vw] z-10" src={Bus}></img>         
-            <img className="absolute w-[300px] h-[400px] top-[53vh] left-[0vw]" src={Buildings}></img>
-            <img className="absolute w-[500px] h-[400px] top-[50vh] left-[250px] z-10" src={School}></img>
+            <img className="building absolute w-[300px] h-[400px] top-[53vh] left-[0vw]" src={Buildings}></img>
+            <img className="building absolute w-[500px] h-[400px] top-[50vh] left-[250px] z-10" src={School}></img>
 
         </>
 )

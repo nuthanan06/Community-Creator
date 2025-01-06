@@ -6,8 +6,14 @@ import Bus from '../assets/Bus.png';
 import Buildings from '../assets/Buildings.png';
 import School from '../assets/School.png';
 import WindTurbines from '../assets/WindTurbines.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const CommunityPage = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
     const [leftPixels, setLeftPixels] = useState([]);
     const question = useLoaderData();
 
@@ -30,9 +36,7 @@ const CommunityPage = () => {
             <img className="absolute top-[70vh] left-[50vw] z-10" src={Bus}></img>         
             <img className="absolute w-[300px] h-[400px] top-[53vh] left-[0vw]" src={Buildings}></img>
             <img className="absolute w-[500px] h-[400px] top-[50vh] left-[250px] z-10" src={School}></img>
-            <img className="absolute w-[500px] h-[400px] top-[50vh] left-[500px] z-0" src={WindTurbines}></img>
-
-
+            <img data-aos="fade-in" data-aos-duration="2000" className="absolute w-[500px] h-[400px] top-[50vh] left-[500px] z-0" src={WindTurbines}></img>
         </>
 )
 }

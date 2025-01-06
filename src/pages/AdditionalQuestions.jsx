@@ -9,9 +9,16 @@ import ShortResponseQuestion from "../components/ShortResponseQuestion";
 import People from "../assets/People.png";
 import Booth from "../assets/Booth.png";
 import GardeningPeople from "../assets/GardeningPeople.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 
 const AdditionalQuestions = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
     const [leftPixels, setLeftPixels] = useState([]);
     const question = useLoaderData();
 
@@ -35,9 +42,9 @@ const AdditionalQuestions = () => {
             <img className="absolute w-[300px] h-[400px] top-[53vh] left-[0vw]" src={Buildings}></img>
             <img className="absolute w-[500px] h-[400px] top-[50vh] left-[250px] z-10" src={School}></img>
             <img className="absolute w-[500px] h-[400px] top-[50vh] left-[500px] z-0" src={WindTurbines}></img>
-            <img className="absolute w-[200px] h-[200px] top-[calc(95vh-200px)] left-[200px] z-30" src={People}></img>
-            <img className="absolute w-[250px] h-[200px] top-[calc(95vh-200px)] left-[700px] z-30" src={GardeningPeople}></img>
-            <img className="absolute w-[250px] h-[200px] top-[calc(95vh-200px)] left-[400px] z-30" src={Booth}></img>
+            <img data-aos="fade-right" data-aos-duration="1000" className="absolute w-[200px] h-[200px] top-[calc(95vh-200px)] left-[200px] z-30" src={People}></img>
+            <img data-aos="fade-right" data-aos-duration="1000" className="absolute w-[250px] h-[200px] top-[calc(95vh-200px)] left-[700px] z-30" src={GardeningPeople}></img>
+            <img data-aos="fade-right" data-aos-duration="1000" className="absolute w-[250px] h-[200px] top-[calc(95vh-200px)] left-[400px] z-30" src={Booth}></img>
         </>
 )
 }

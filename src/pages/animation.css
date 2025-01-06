@@ -1,0 +1,30 @@
+.bus {
+    animation-name: slidein2; 
+    animation-duration: 2s;
+
+}
+
+.building {
+    animation-name: fall; 
+    animation-duration: 2s;
+}
+
+@keyframes slidein2 {
+    from {
+      transform: translateX(-500%);
+    }
+  
+    to {
+      transform: translateX(0%);
+    }
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(-200%);
+      }
+    
+      to {
+        transform: translateY(0%);
+      }
+}

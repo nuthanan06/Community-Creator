@@ -38,7 +38,7 @@ def chatbot():
         elif val[x] == 'level5':
             val[x] = data['questions'][x].get('level5')    
 
-    co = cohere.ClientV2("YOUR_API_KEY_HERE")
+    co = cohere.ClientV2("")
     response1 = co.chat(
         model="command-r-plus", 
         messages=[{"role": "user", "content": "The following user has asked for feedback on how they can make their community more sustainable.\

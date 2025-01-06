@@ -4,6 +4,7 @@ import { useLoaderData } from 'react-router-dom';
 import Question from '../components/Question';
 import Bus from '../assets/Bus.png'
 
+
 const HousingPage = () => {
     const [leftPixels, setLeftPixels] = useState([]);
     const question = useLoaderData();
@@ -24,7 +25,7 @@ const HousingPage = () => {
             {leftPixels.map((x, index) => (
                 <YellowLine key={index} left={x} />
             ))}
-            <img className="absolute top-[70vh] left-[50vw]" src={Bus}>
+            <img className="bus absolute top-[70vh] left-[50vw]" src={Bus}>
             </img>
         </>
     );

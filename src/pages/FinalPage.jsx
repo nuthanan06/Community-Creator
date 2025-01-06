@@ -11,6 +11,7 @@ import Button from '../components/Button';
 
 
 const FinalPage = () => {
+
     const [leftPixels, setLeftPixels] = useState([]);
     const [text, setText] = useState("");
 
@@ -42,6 +43,7 @@ const FinalPage = () => {
                 const res = await fetch("/cohere");
                 const data = await res.json();
                 deleteJobs();
+                console.log("deleted")
                 setText(data);
             }
             

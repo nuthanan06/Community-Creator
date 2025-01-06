@@ -1,8 +1,12 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
 import Button from './Button'
+import React, { useEffect, useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const StartComponent = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
   return (
         <div className="flex flex-col justify-center items-center w-[100vw] h-[100vh] text-center">
                 <p className="text-center text-white mx-auto w-[90%] font-chakra text-[100px]" data-aos="fade-in" data-aos-duration="1000"> Community Creator </p>
