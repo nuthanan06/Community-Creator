@@ -23,10 +23,11 @@ Create React project using Vite
    npm create vite@latest
    npm install
 
-3. Install Tailwind CSS
+3. Install Tailwind CSS and AOS
    ```bash
    npm install -D tailwindcss postcss autoprefixer
    npx tailwindcss init
+   npm install --save aos@next
 
 4. Activate and Replace Cohere API Key
    - Visit [https://dashboard.cohere.com/](https://dashboard.cohere.com/) to get key.
